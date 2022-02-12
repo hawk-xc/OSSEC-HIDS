@@ -44,7 +44,7 @@ lalu setup dengan perintah
 ```
 maka teman-teman akan diberikan pilihan menggunakan bahasa install, disini saya menggunakan bahasa inggris, ketikan `en`
 
-`
+bash```
 ** Para instalação em português, escolha [br].
   ** 要使用中文进行安装, 请选择 [cn].
   ** Fur eine deutsche Installation wohlen Sie [de].
@@ -61,7 +61,7 @@ maka teman-teman akan diberikan pilihan menggunakan bahasa install, disini saya 
   ** Za instalaciju na srpskom, izaberi [sr].
   ** Türkçe kurulum için seçin [tr].
   (en/br/cn/de/el/es/fr/hu/it/jp/nl/pl/ru/sr/tr) [en]: en
-`
+```
 
 
 
