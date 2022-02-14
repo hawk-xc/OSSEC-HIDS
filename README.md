@@ -3,8 +3,9 @@ OSSEC (Open Source HIDS SECurity) merupakan salah satu tools profesional kemanan
 
 ### installasi
 
-langsung saja ke tahap installasi, OSSEC memiliki 2 tipe pengoperasian, menggunakan mode CLI dan GUI, namun disini saya akan menggunakan tools HIDS OSSEC CLI. saya menggunakan ubuntu 20.04 (focal-fossa) LTS. masuk ke terminal dan lakukan update repository, sebelumnya masuk ke mode root (super user)
+langsung saja ke tahap installasi, OSSEC memiliki 2 tipe pengoperasian, menggunakan mode CLI dan GUI, namun disini saya akan menggunakan tools HIDS OSSEC CLI. saya menggunakan ubuntu 20.04 (focal-fossa) LTS. pada installasi kali ini saya akan memaparkan bagaimana cara menginstall ossec server dan client/agent. sebelumnya kita akan melakukan konfigurasi pada sisi server. masuk ke terminal dan lakukan update repository, sebelumnya masuk ke mode root (super user)
 
+### server side
 ```bash
 sudo su
 ```
@@ -16,7 +17,7 @@ apt-get update
 HIDS OSSEC membutuhkan beberapa tools tambahan dalam melakukan pekerjaannya, silakan copy & paste ke terminal teman-teman.
 
 ```bash
-apt-get install gcc make libevent-dev zlib1g-dev libssl-dev libpcre2-dev wget tar -y
+apt-get install php gcc make libevent-dev zlib1g-dev libssl-dev libpcre2-dev wget tar -y
 ```
 
 download versi terbaru dari OSSEC menggunakan wget dengan perintah.
@@ -80,10 +81,10 @@ OSSEC HIDS v3.6.0 Installation Script - http://www.ossec.net
   -- Press ENTER to continue or Ctrl-C to abort. --
 ```
 
-lalu kita akan diminta untuk memilih tujuan penginstallan, disini silakan isi dengan agent/komputer kita, dengan mengetikan `agent` lalu enter.
+lalu kita akan diminta untuk memilih tujuan host penginstall-an, disini silakan isi dengan `hybrid` sebagai server ossec kita, dengan mengetikan `hybrid` lalu enter.
 
 ```
-1- What kind of installation do you want (server, agent, local, hybrid or help)? agent 
+1- What kind of installation do you want (server, agent, local, hybrid or help)? hybrid
 ```
 
 disini kita akan diarahkan lagi, untuk memilih lokasi penyimpanan installasi OSSEC, tekan `enter` untuk path default `/var/ossec`
