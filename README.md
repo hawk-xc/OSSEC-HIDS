@@ -133,20 +133,26 @@ Nonaktifkan respons aktif. Jika tidak, Anda dapat mengaktifkannya jika Anda mema
 baiklah disini langkah setup berhasil, akan ada output path dimana ia akan menghasilkan log dari OSSEC, ketikkan `enter`.
 
 ```
-3.5- Setting the configuration to analyze the following logs:
-    -- /var/log/auth.log
-    -- /var/log/syslog
-    -- /var/log/dpkg.log
-    -- /var/log/apache2/error.log (apache log)
-    -- /var/log/apache2/access.log (apache log)
+- Configuration finished properly.
 
- - If you want to monitor any other file, just change 
-   the ossec.conf and add a new localfile entry.
-   Any questions about the configuration can be answered
-   by visiting us online at http://www.ossec.net .
-   
-   
-   --- Press ENTER to continue ---
+- To start OSSEC HIDS:
+      /var/ossec/bin/ossec-control start
+
+- To stop OSSEC HIDS:
+      /var/ossec/bin/ossec-control stop
+
+- The configuration can be viewed or modified at /var/ossec/etc/ossec.conf
+
+
+  Thanks for using the OSSEC HIDS.
+  If you have any question, suggestion or if you find any bug,
+  contact us at https://github.com/ossec/ossec-hids or using
+  our public maillist at  
+  https://groups.google.com/forum/#!forum/ossec-list
+
+  More information can be found at http://www.ossec.net
+
+  ---  Press ENTER to finish (maybe more information below). ---
 ```
 ```
 *** information
