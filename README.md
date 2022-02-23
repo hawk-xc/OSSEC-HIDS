@@ -17,7 +17,7 @@ apt-get update
 HIDS OSSEC membutuhkan beberapa tools tambahan dalam melakukan pekerjaannya, silakan copy & paste ke terminal teman-teman.
 
 ```bash
-apt-get install php gcc make libevent-dev zlib1g-dev libssl-dev libpcre2-dev wget tar -y
+apt-get install build-essential php gcc make libevent-dev zlib1g-dev libssl-dev libpcre2-dev wget tar -y
 ```
 
 download versi terbaru dari OSSEC menggunakan wget dengan perintah.
